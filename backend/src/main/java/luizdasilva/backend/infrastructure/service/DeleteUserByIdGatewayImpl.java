@@ -20,7 +20,7 @@ public class DeleteUserByIdGatewayImpl implements DeleteUserByIdGateway {
         try{
             userEntityRepository.deleteById(id);
         }catch (Exception ex){
-            throw new InternalServerErrorException("Error trying to save user: " + ex.getMessage());
+            throw new InternalServerErrorException("Error when trying to delete user: " + ex.getMessage());
         }
     }
 }

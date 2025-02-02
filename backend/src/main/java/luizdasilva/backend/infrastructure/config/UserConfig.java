@@ -42,4 +42,9 @@ public class UserConfig {
     public DeleteUserByIdUseCase deleteUserByIdUseCase(DeleteUserByIdGateway deleteUserByIdGateway, ValidateIfUserExistsUseCase validateIfUserExistsUseCase){
         return new DeleteUserByIdUseCaseImpl(deleteUserByIdGateway, validateIfUserExistsUseCase);
     }
+
+    @Bean
+    public UpdateUserByIdUseCase updateUserByIdUseCase(UpdateUserByIdGateway updateUserByIdGateway, ValidateIfUserExistsUseCase validateIfUserExistsUseCase){
+        return new UpdateUserByIdUseCaseImpl(validateIfUserExistsUseCase, updateUserByIdGateway);
+    }
 }

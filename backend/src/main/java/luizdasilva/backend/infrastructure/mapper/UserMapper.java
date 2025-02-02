@@ -2,6 +2,7 @@ package luizdasilva.backend.infrastructure.mapper;
 
 import luizdasilva.backend.core.domain.User;
 import luizdasilva.backend.infrastructure.dto.CreateUserDTO;
+import luizdasilva.backend.infrastructure.dto.UpdateUserDTO;
 import luizdasilva.backend.infrastructure.entity.UserEntity;
 import org.springframework.stereotype.Component;
 
@@ -24,6 +25,15 @@ public class UserMapper {
                 createUserDTO.email(),
                 createUserDTO.password(),
                 createUserDTO.type()
+        );
+    }
+
+    public User toUser(UpdateUserDTO updateUserDTO){
+        return new User(
+                updateUserDTO.username(),
+                updateUserDTO.email(),
+                updateUserDTO.password(),
+                updateUserDTO.type()
         );
     }
 

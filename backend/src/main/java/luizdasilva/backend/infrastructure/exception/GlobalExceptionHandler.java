@@ -50,4 +50,10 @@ public class GlobalExceptionHandler {
     public ResponseEntity<String> notFound(NotFound ex) {
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ex.getMessage());
     }
+
+    @ExceptionHandler(InvalidData.class)
+    public ResponseEntity<String> invalidData(InvalidData ex) {
+        return ResponseEntity.status(HttpStatus.CONFLICT).body(ex.getMessage());
+    }
+
 }
