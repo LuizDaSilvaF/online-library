@@ -26,4 +26,16 @@ public class UserMapper {
                 createUserDTO.type()
         );
     }
+
+    public User toUser(UserEntity userEntity){
+        return new User(
+                userEntity.getId(),
+                userEntity.getUsername(),
+                userEntity.getEmail(),
+                userEntity.getPassword(),
+                userEntity.getType(),
+                userEntity.getCreatedAt(),
+                userEntity.getUpdatedAt()
+        );
+    }
 }

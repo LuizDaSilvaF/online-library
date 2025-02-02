@@ -1,9 +1,6 @@
 package luizdasilva.backend.infrastructure.exception;
 
-import luizdasilva.backend.core.exception.EmailAlreadyExistsException;
-import luizdasilva.backend.core.exception.InternalServerErrorException;
-import luizdasilva.backend.core.exception.InvalidUserTypeException;
-import luizdasilva.backend.core.exception.UserDoesNotExistException;
+import luizdasilva.backend.core.exception.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
@@ -46,6 +43,11 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(UserDoesNotExistException.class)
     public ResponseEntity<String> userDoesNotExistException(UserDoesNotExistException ex){
-        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getMessage());
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ex.getMessage());
+    }
+
+    @ExceptionHandler(NotFound.class)
+    public ResponseEntity<String> notFound(NotFound ex) {
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ex.getMessage());
     }
 }
