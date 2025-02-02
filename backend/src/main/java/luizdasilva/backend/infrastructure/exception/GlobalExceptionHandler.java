@@ -56,4 +56,8 @@ public class GlobalExceptionHandler {
         return ResponseEntity.status(HttpStatus.CONFLICT).body(ex.getMessage());
     }
 
+    @ExceptionHandler(AuthorAlreadySaved.class)
+    public ResponseEntity<String> authorAlreadySaved(AuthorAlreadySaved ex) {
+        return ResponseEntity.status(HttpStatus.CONFLICT).body(ex.getMessage());
+    }
 }
