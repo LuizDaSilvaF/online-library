@@ -1,6 +1,6 @@
-package luizdasilva.backend.application.usecaseimpl;
+package luizdasilva.backend.application.usecaseimpl.user;
 
-import luizdasilva.backend.application.gateway.ValidateEmailGateway;
+import luizdasilva.backend.application.gateway.user.ValidateEmailGateway;
 import luizdasilva.backend.usecase.user.ValidateEmailUseCase;
 
 public class ValidateEmailUseCaseImpl implements ValidateEmailUseCase {

@@ -1,6 +1,6 @@
-package luizdasilva.backend.infrastructure.service;
+package luizdasilva.backend.infrastructure.service.user;
 
-import luizdasilva.backend.application.gateway.ValidateIfUserExistsGateway;
+import luizdasilva.backend.application.gateway.user.ValidateIfUserExistsGateway;
 import luizdasilva.backend.infrastructure.mapper.UserMapper;
 import luizdasilva.backend.infrastructure.repository.UserEntityRepository;
 import org.springframework.stereotype.Service;

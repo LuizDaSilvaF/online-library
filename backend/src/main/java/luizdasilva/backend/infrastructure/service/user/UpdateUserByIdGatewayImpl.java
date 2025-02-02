@@ -1,6 +1,6 @@
-package luizdasilva.backend.infrastructure.service;
+package luizdasilva.backend.infrastructure.service.user;
 
-import luizdasilva.backend.application.gateway.UpdateUserByIdGateway;
+import luizdasilva.backend.application.gateway.user.UpdateUserByIdGateway;
 import luizdasilva.backend.core.domain.User;
 import luizdasilva.backend.core.exception.EmailAlreadyExistsException;
 import luizdasilva.backend.core.exception.InternalServerErrorException;

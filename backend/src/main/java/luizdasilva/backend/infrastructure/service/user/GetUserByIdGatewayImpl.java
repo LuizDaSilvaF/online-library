@@ -1,6 +1,6 @@
-package luizdasilva.backend.infrastructure.service;
+package luizdasilva.backend.infrastructure.service.user;
 
-import luizdasilva.backend.application.gateway.GetUserByIdGateway;
+import luizdasilva.backend.application.gateway.user.GetUserByIdGateway;
 import luizdasilva.backend.core.domain.User;
 import luizdasilva.backend.core.exception.InternalServerErrorException;
 import luizdasilva.backend.infrastructure.entity.UserEntity;

@@ -1,4 +1,4 @@
-package luizdasilva.backend.infrastructure.dto;
+package luizdasilva.backend.infrastructure.dto.user;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

@@ -1,6 +1,6 @@
-package luizdasilva.backend.application.usecaseimpl;
+package luizdasilva.backend.application.usecaseimpl.user;
 
-import luizdasilva.backend.application.gateway.ValidateIfUserExistsGateway;
+import luizdasilva.backend.application.gateway.user.ValidateIfUserExistsGateway;
 import luizdasilva.backend.usecase.user.ValidateIfUserExistsUseCase;
 
 import java.util.UUID;

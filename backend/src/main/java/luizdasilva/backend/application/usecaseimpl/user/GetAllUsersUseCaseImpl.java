@@ -1,12 +1,11 @@
-package luizdasilva.backend.application.usecaseimpl;
+package luizdasilva.backend.application.usecaseimpl.user;
 
-import luizdasilva.backend.application.gateway.GetAllUsersGateway;
+import luizdasilva.backend.application.gateway.user.GetAllUsersGateway;
 import luizdasilva.backend.core.domain.User;
 import luizdasilva.backend.core.exception.NotFound;
 import luizdasilva.backend.usecase.user.ChecksForUsersUseCase;
 import luizdasilva.backend.usecase.user.GetAllUsersUseCase;
 
-import java.awt.print.Pageable;
 import java.util.List;
 
 public class GetAllUsersUseCaseImpl implements GetAllUsersUseCase {

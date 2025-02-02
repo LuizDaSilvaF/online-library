@@ -3,16 +3,14 @@ package luizdasilva.backend.infrastructure.controller;
 import jakarta.validation.Valid;
 import luizdasilva.backend.core.domain.User;
 import luizdasilva.backend.core.exception.*;
-import luizdasilva.backend.infrastructure.dto.CreateUserDTO;
-import luizdasilva.backend.infrastructure.dto.UpdateUserDTO;
-import luizdasilva.backend.infrastructure.entity.UserEntity;
+import luizdasilva.backend.infrastructure.dto.user.CreateUserDTO;
+import luizdasilva.backend.infrastructure.dto.user.UpdateUserDTO;
 import luizdasilva.backend.infrastructure.mapper.UserMapper;
 import luizdasilva.backend.usecase.user.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.awt.print.Pageable;
 import java.util.List;
 import java.util.UUID;
 

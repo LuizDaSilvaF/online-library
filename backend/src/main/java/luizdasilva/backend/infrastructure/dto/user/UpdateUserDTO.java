@@ -1,4 +1,4 @@
-package luizdasilva.backend.infrastructure.dto;
+package luizdasilva.backend.infrastructure.dto.user;
 
 import luizdasilva.backend.core.domain.enums.UserTypeEnum;
 

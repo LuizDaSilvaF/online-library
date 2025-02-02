@@ -1,6 +1,6 @@
-package luizdasilva.backend.infrastructure.service;
+package luizdasilva.backend.infrastructure.service.user;
 
-import luizdasilva.backend.application.gateway.ValidateEmailGateway;
+import luizdasilva.backend.application.gateway.user.ValidateEmailGateway;
 import luizdasilva.backend.infrastructure.repository.UserEntityRepository;
 import org.springframework.stereotype.Service;
 

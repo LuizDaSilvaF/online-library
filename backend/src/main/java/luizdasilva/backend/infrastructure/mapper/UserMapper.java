@@ -1,8 +1,8 @@
 package luizdasilva.backend.infrastructure.mapper;
 
 import luizdasilva.backend.core.domain.User;
-import luizdasilva.backend.infrastructure.dto.CreateUserDTO;
-import luizdasilva.backend.infrastructure.dto.UpdateUserDTO;
+import luizdasilva.backend.infrastructure.dto.user.CreateUserDTO;
+import luizdasilva.backend.infrastructure.dto.user.UpdateUserDTO;
 import luizdasilva.backend.infrastructure.entity.UserEntity;
 import org.springframework.stereotype.Component;
 

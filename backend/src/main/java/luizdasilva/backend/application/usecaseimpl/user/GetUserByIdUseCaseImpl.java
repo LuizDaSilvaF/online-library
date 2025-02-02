@@ -1,6 +1,6 @@
-package luizdasilva.backend.application.usecaseimpl;
+package luizdasilva.backend.application.usecaseimpl.user;
 
-import luizdasilva.backend.application.gateway.GetUserByIdGateway;
+import luizdasilva.backend.application.gateway.user.GetUserByIdGateway;
 import luizdasilva.backend.core.domain.User;
 import luizdasilva.backend.core.exception.InternalServerErrorException;
 import luizdasilva.backend.core.exception.UserDoesNotExistException;

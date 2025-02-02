@@ -1,6 +1,6 @@
-package luizdasilva.backend.application.usecaseimpl;
+package luizdasilva.backend.application.usecaseimpl.user;
 
-import luizdasilva.backend.application.gateway.DeleteUserByIdGateway;
+import luizdasilva.backend.application.gateway.user.DeleteUserByIdGateway;
 import luizdasilva.backend.core.exception.InternalServerErrorException;
 import luizdasilva.backend.core.exception.UserDoesNotExistException;
 import luizdasilva.backend.usecase.user.DeleteUserByIdUseCase;

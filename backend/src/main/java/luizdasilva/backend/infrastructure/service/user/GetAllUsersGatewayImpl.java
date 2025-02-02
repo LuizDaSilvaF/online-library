@@ -1,14 +1,12 @@
-package luizdasilva.backend.infrastructure.service;
+package luizdasilva.backend.infrastructure.service.user;
 
-import luizdasilva.backend.application.gateway.GetAllUsersGateway;
+import luizdasilva.backend.application.gateway.user.GetAllUsersGateway;
 import luizdasilva.backend.core.domain.User;
 import luizdasilva.backend.infrastructure.entity.UserEntity;
 import luizdasilva.backend.infrastructure.mapper.UserMapper;
 import luizdasilva.backend.infrastructure.repository.UserEntityRepository;
-import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import java.awt.print.Pageable;
 import java.util.ArrayList;
 import java.util.List;
 

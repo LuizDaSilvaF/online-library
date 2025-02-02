@@ -1,6 +1,6 @@
-package luizdasilva.backend.application.usecaseimpl;
+package luizdasilva.backend.application.usecaseimpl.user;
 
-import luizdasilva.backend.application.gateway.CreateUserGateway;
+import luizdasilva.backend.application.gateway.user.CreateUserGateway;
 import luizdasilva.backend.core.domain.User;
 import luizdasilva.backend.core.exception.EmailAlreadyExistsException;
 import luizdasilva.backend.core.exception.InternalServerErrorException;

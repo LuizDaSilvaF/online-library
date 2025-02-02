@@ -1,4 +1,4 @@
-package luizdasilva.backend.application.gateway;
+package luizdasilva.backend.application.gateway.user;
 
 import luizdasilva.backend.core.domain.User;
 

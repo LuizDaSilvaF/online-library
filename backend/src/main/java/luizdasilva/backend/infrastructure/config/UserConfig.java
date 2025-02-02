@@ -1,7 +1,7 @@
 package luizdasilva.backend.infrastructure.config;
 
-import luizdasilva.backend.application.gateway.*;
-import luizdasilva.backend.application.usecaseimpl.*;
+import luizdasilva.backend.application.gateway.user.*;
+import luizdasilva.backend.application.usecaseimpl.user.*;
 import luizdasilva.backend.usecase.user.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

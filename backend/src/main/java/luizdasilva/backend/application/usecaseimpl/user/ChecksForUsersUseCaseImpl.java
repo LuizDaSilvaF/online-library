@@ -1,6 +1,6 @@
-package luizdasilva.backend.application.usecaseimpl;
+package luizdasilva.backend.application.usecaseimpl.user;
 
-import luizdasilva.backend.application.gateway.ChecksForUsersGateway;
+import luizdasilva.backend.application.gateway.user.ChecksForUsersGateway;
 import luizdasilva.backend.usecase.user.ChecksForUsersUseCase;
 
 public class ChecksForUsersUseCaseImpl implements ChecksForUsersUseCase {
