@@ -37,4 +37,9 @@ public class UserConfig {
     public ChecksForUsersUseCase checksForUsersUseCase(ChecksForUsersGateway checksForUsersGateway){
         return new ChecksForUsersUseCaseImpl(checksForUsersGateway);
     }
+
+    @Bean
+    public DeleteUserByIdUseCase deleteUserByIdUseCase(DeleteUserByIdGateway deleteUserByIdGateway, ValidateIfUserExistsUseCase validateIfUserExistsUseCase){
+        return new DeleteUserByIdUseCaseImpl(deleteUserByIdGateway, validateIfUserExistsUseCase);
+    }
 }

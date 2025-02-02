@@ -10,6 +10,7 @@ import luizdasilva.backend.infrastructure.dto.CreateUserDTO;
 import luizdasilva.backend.infrastructure.entity.UserEntity;
 import luizdasilva.backend.infrastructure.mapper.UserMapper;
 import luizdasilva.backend.usecase.user.CreateUserUseCase;
+import luizdasilva.backend.usecase.user.DeleteUserByIdUseCase;
 import luizdasilva.backend.usecase.user.GetAllUsersUseCase;
 import luizdasilva.backend.usecase.user.GetUserByIdUseCase;
 import org.springframework.http.HttpStatus;
@@ -26,12 +27,14 @@ public class UserController {
     private final CreateUserUseCase createUserUseCase;
     private final GetUserByIdUseCase getUserByIdUseCase;
     private final GetAllUsersUseCase getAllUsersUseCase;
+    private final DeleteUserByIdUseCase deleteUserByIdUseCase;
     private final UserMapper userMapper;
 
-    public UserController(CreateUserUseCase createUserUseCase, GetUserByIdUseCase getUserByIdUseCase, GetAllUsersUseCase getAllUsersUseCase, UserMapper userMapper) {
+    public UserController(CreateUserUseCase createUserUseCase, GetUserByIdUseCase getUserByIdUseCase, GetAllUsersUseCase getAllUsersUseCase, DeleteUserByIdUseCase deleteUserByIdUseCase, UserMapper userMapper) {
         this.createUserUseCase = createUserUseCase;
         this.getUserByIdUseCase = getUserByIdUseCase;
         this.getAllUsersUseCase = getAllUsersUseCase;
+        this.deleteUserByIdUseCase = deleteUserByIdUseCase;
         this.userMapper = userMapper;
     }
 
@@ -53,5 +56,11 @@ public class UserController {
     public ResponseEntity<List<User>> getAllUser() throws NotFound {
         List<User> users = getAllUsersUseCase.getAll();
         return ResponseEntity.status(HttpStatus.OK).body(users);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<String> deleteUserById(@PathVariable UUID id) throws UserDoesNotExistException, InternalServerErrorException {
+        deleteUserByIdUseCase.deleteUserById(id);
+        return ResponseEntity.status(HttpStatus.OK).body("User deleted successfully.");
     }
 }
